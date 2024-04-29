@@ -1,0 +1,44 @@
+.button {
+  width: 100%;
+  text-align: inherit;
+}
+
+.innerWrap {
+  position: relative;
+
+  &.current {
+    text-decoration: underline;
+
+    &.descending {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &.ascending{
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: -10px;
+    opacity: 0;
+  }
+
+  &::before {
+    background-image: url("/images/arrow-asc.svg");
+    top: 1px;
+  }
+
+  &::after {
+    background-image: url("/images/arrow-desc.svg");
+    top: 4px;
+  }
+}

@@ -1,0 +1,38 @@
+.error {
+  margin-top: 3px;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #000;
+  background-color: #fff;
+  height: 40px;
+  width: 130px;
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 1px 1px 0px #000;
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+    box-shadow: none;
+
+    &:active {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &.loading {
+    color: transparent;
+    background-image: url(/images/loading.svg);
+  }
+
+  &:active {
+    top: 1px;
+    left: 1px;
+    box-shadow: none;
+  }
+}

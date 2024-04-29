@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "Neutral";
+	src: url("/fonts/neutral.woff2") format("woff2"),
+			 url("/fonts/neutral.woff") format("woff"),
+			 url("/fonts/neutral.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SimplonMono";
+  src: url("/fonts/simplonMono.woff2") format("woff2"),
+			 url("/fonts/simplonMono.woff") format("woff"),
+			 url("/fonts/simplonMono.tff") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SimplonMono";
+  src: url("/fonts/simplonMonoMedium.woff2") format("woff2"),
+			 url("/fonts/simplonMonoMedium.woff") format("woff"),
+			 url("/fonts/simplonMonoMedium.tff") format("tff");
+  font-weight: bold;
+  font-style: normal;
+}

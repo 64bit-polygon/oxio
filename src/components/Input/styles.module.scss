@@ -1,0 +1,45 @@
+.inputWrap {
+  position: relative;
+  transition: opacity 300ms;
+
+  &.disabled {
+    opacity: 0.25;
+  }
+}
+
+.input {
+  border: 0;
+  outline: none;
+  width: 100%;
+  transition: color 200ms;
+  font: 14px/30px "Neutral";
+  height: 30px;
+  border: 1px solid #000;
+  margin: 12px 0 10px;
+  transition: color 200ms, border-color 200ms;
+  text-indent: 4px;
+
+  .errored & {
+    color: #FF0000;
+    border-color: #FF0000;
+  }
+}
+
+.label {
+  position: absolute;
+  left: 4px;
+  top: 0;
+  font: 9px/1 "SimplonMono";
+  font-weight: bold;
+  transition: color 200ms;
+
+  .errored & {
+    color: #FF0000;
+  }
+}
+
+.errorMessage {
+  position: absolute;
+  left: 4px;
+  bottom: 0;
+}

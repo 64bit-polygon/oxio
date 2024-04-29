@@ -1,0 +1,32 @@
+@keyframes LOADER {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  transform-origin: center;
+  animation: LOADER 2s linear infinite;
+}
+
+@keyframes CIRCLE {
+  0% {
+    stroke-dasharray: 0 150;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 42 150;
+    stroke-dashoffset: -16;
+  }
+
+  95%,100% {
+    stroke-dasharray: 42 150;
+    stroke-dashoffset:-59
+  }
+}
+
+.circle{
+  stroke-linecap: round;
+  animation: CIRCLE 1.5s ease-in-out infinite;
+}

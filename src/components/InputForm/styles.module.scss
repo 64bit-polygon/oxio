@@ -1,0 +1,23 @@
+.form {
+  padding-bottom: 45px;
+}
+
+.row {
+  margin: 3px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+
+  &.right {
+    text-align: right;
+  }
+}
+
+.submit {
+  text-align: right;
+}
